@@ -1,0 +1,102 @@
+body > div {
+	background-color: #eeeeee;
+	height: 418px;
+	width: 770px;
+	box-sizing: border-box;
+}
+
+h1 {
+	color: #234465;
+	font-size: 22px;
+	margin-left: 10px;
+}
+
+.regTxt {
+	color: #5a5a5a;
+	font-size: 13px;
+	margin-left: 10px;
+}
+
+form > div {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 12px;
+	margin-top: 14px;
+}
+
+form.newRegistration > div {
+	color: #666666;
+}
+
+form.oldUser > div {
+	color: white;
+}
+
+div.oldUserDiv {
+	background-color: #234465;
+	vertical-align: top;
+}
+
+div.oldUserDiv, div.newRegDiv {
+	display: inline-block;
+	margin-top: 36px;
+	height: 300px;
+	width: 370px;
+	box-sizing: border-box;
+}
+
+input {
+	padding: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+	width: 340px;
+	height: 39px;
+	margin-left: 12px;
+	margin-top: 14px;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	float: right;
+	margin-top: 15px;
+	margin-right: 19px;
+}
+
+input[type="checkbox"] {
+	margin-top: 15px;
+	margin-left: 12px;
+}
+
+.newRegistration>input[type="submit"] {
+	border: 3px solid #234465;
+	width: 168px;
+	height: 39px;
+	background-color: rgba(0,0,0,0);
+	box-sizing: border-box;
+}
+
+.oldUser>input[type="submit"] {
+	border: 3px solid #ff9c00;
+	width: 138px;
+	height: 39px;
+	background-color: rgba(0,0,0,0);
+	box-sizing: border-box;
+	color: white;	
+}
+
+.oldUser {
+	color: white;
+}
+
+a {
+	text-decoration: underline;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 35px;
+	margin-top: 12px;
+	margin-left: 100px;	
+	float: right;		
+}
+

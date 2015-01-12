@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Styling s HTML Form</title>
+		<link rel="stylesheet" href="_2_FlightOrder.css">
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>Flight Order</h1>
+			</header>
+			<form method="post" action="#">
+				<div class="column">
+					<label>From</label><br />
+					<input list="cities" name="departureCity" placeholder="enter a city" required="required" />
+					<datalist id="cities">
+						<option value="Sofia">
+						<option value="Plovdiv">
+						<option value="Varna">
+						<option value="Bourgas">
+						<option value="London">
+						<option value="Rome">
+						<option value="Madrid">
+					</datalist>
+				</div>	
+				<div class="column">
+					<label>To</label><br />
+					<input list="cities" name="arrivalCity" placeholder="enter a city" required="required" />
+				</div>
+				<div class="rightColumn">
+					<input type="checkbox" name="directs" value="yes" id="directID" /><label for="directID">Prefer Directs</label>
+				</div>
+				<div class="column">
+					<label>Departure Date</label><br />
+					<input name="departureDate" type="date" value="2014-06-09" required="required" />
+				</div>
+				<div class="column">
+					<label>Time Interval</label><br />
+					<input name="departureStartTime" type="time"  value="05:00" required="required" />
+					<input name="departureEndTime" type="time" value="22:00" required="required" />
+				</div>
+				<div class="column">
+					<label>Return Date</label><br />
+					<input name="returnDate" type="date" value="2014-06-13" required="required" />
+				</div>
+				<div class="column">
+					<label>Time Interval</label><br />
+					<input name="returnStartTime" type="time" value="16:00" required="required" />
+					<input name="returnEndTime" type="time" value="22:00" required="required" />
+				</div>
+				<div class="column">
+					<label>12+</label><label>2-12</label><label>0-2</label><br />
+					<input type="number" name="people" min="0" max="100" value="0" required="required" />		
+					<input type="number" name="childrens" min="0" max="100" value="0" required="required" />
+					<input type="number" name="babies" min="0" max="100" value="0" required="required" />
+				</div>
+				<div class="column">
+				<label>Choose class</label><br />	
+				<select name="class">
+					<option value="economy">Economy</option>
+					<option value="business">Business</option>					
+				</select>
+				</div>
+				<div class="rightColumn">
+					<input type="submit" action="#" value="Search" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

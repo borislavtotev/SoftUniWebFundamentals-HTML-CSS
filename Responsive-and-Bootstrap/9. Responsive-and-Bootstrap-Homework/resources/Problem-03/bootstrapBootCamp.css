@@ -1,0 +1,40 @@
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+
+nav.navbar{
+	background-color: red;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: white;
+	color: red;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+	background-color: rgba(254, 0, 0, 0.53);
+	color: white;	
+}
+
+.jumbotron {
+	background-color: rgba(252, 233, 233, 1);	
+}
+
+
+@media only screen and (max-width: 768px) { 
+  .list-group  {
+	text-align: center;
+  }
+}

@@ -1,0 +1,190 @@
+img {
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body {
+	background-color: #6698ff;
+	font-size: 14px;
+}
+
+#wrapper {
+	width: 50%;
+	margin: 0 auto;
+}
+
+section {
+	display: block;
+	width: 73%;
+	float: left;
+}
+
+aside {
+	display: inline-block;
+	width: 23%;
+	float: left;
+	margin-right: 0;
+}
+
+footer {
+	clear: both;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+nav > ul {
+	height: 1px;
+	border-bottom: 1px solid black;
+	margin-top: 2%;
+	text-align: center;
+	padding-left: 0;
+	position: relative;
+	z-index: -1;
+}
+
+nav > ul > li {
+	display: table-cell;
+	float: left;
+	border: 1px solid black;
+	margin: 1.5%;
+	padding-top: 0.75%;
+	padding-left: 1.8%;
+	padding-bottom: 0.75%;
+	padding-right: 1.8%;
+	background-color: #ffffff;
+	position: relative;
+	top: -15px;
+	z-index: 1;
+}
+
+nav > ul > li > a {
+	text-decoration: none;
+	color: black;
+}
+
+nav {
+	clear: both;
+}
+
+aside > div > ul > li {
+	padding-bottom: 2%;
+}
+
+aside > div > ul > li > a {
+	text-decoration: none;
+	color: black;
+}
+
+#wrapper > header > nav > ul {
+	padding-left: 25%;
+}
+
+header > h1 > a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#wrapper > header > h1 {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+	font-size: 2.5em;
+}
+
+article > header > h1 {
+	margin-top: 0;
+	font-size: 1.5em;
+}
+
+article, aside, footer {
+	background-color: #e0eafe;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	padding: 2%;
+}
+
+aside {
+	margin-right: 0;
+}
+
+aside > div > ul {
+	padding-left: 0;
+}
+
+footer {
+	padding-bottom: 0;
+}
+
+footer > h2 {
+	margin: 0;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+	#wrapper {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	#wrapper {
+		width: 100%;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	#wrapper aside {
+		display: block;
+		width: 94%;
+	}
+
+	#wrapper aside ul li {
+		display: table-cell;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#wrapper {
+		width: 100%;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	#wrapper aside {
+		display: block;
+		width: 94%;
+	}
+
+	#wrapper aside ul li {
+		display: table-cell;
+		text-align: center;
+	}
+
+	#wrapper nav > ul {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	#wrapper nav > ul > li {
+		display: blocks;
+		width: 94%;
+		margin-left: 0;
+	}
+
+	#wrapper > header > nav > ul {
+		padding-left: 0%;
+		margin-top: 5%;
+	}
+
+}
+

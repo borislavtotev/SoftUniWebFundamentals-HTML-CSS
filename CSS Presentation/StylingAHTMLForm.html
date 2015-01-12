@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Styling s HTML Form</title>
+		<link rel="stylesheet" href="StylingAHTMLForm.css">
+	</head>
+	<body>
+		<div>
+			<form method="post" action="#">
+				<div>Step 1: Your details</div>
+				<fieldset>
+					<label>Name</label>
+					<input type="text" name="name" placeholder="First and last name" />
+				</fieldset>
+				<fieldset>
+					<label>Email</label>
+					<input type="text" name="email" placeholder="example@domain.com" />
+				</fieldset>
+				<fieldset>
+					<label>Phone</label>
+					<input type="text" name="phone" placeholder="e.g. +447500000000" />
+				</fieldset>		   
+				
+				<div>Step 1: Delivery address</div>
+				<fieldset>
+					<label>Address</label>
+					<textarea name="address"></textarea>
+				</fieldset>
+				<fieldset>
+					<label>Post code</label>
+					<input type="text" name="postcode" />
+				</fieldset>
+				<fieldset>
+					<label>Country</label>
+					<input type="text" name="country" />
+				</fieldset>
+				
+				<div>Step 1: Card details</div>
+				<fieldset>
+					<label>Card type</label><br />
+					<input type="radio" name="city" value="visa" /><span>Visa</span>
+					<input type="radio" name="city" value="amex" /><span>AmEx</span>
+					<input type="radio" name="city" value="master" /><span>MasterCard</span>
+				</fieldset>	
+				<fieldset>
+					<label>Card number</label>
+					<input type="text" name="cardnumber" />
+				</fieldset>
+				<fieldset>
+					<label>Security code</label>
+					<input type="text" name="securitycode" />
+				</fieldset>
+				<fieldset>
+					<label>Name on card</label>
+					<input type="text" name="nameoncard" placeholder="exact name as on the card" />
+				</fieldset>
+				<input type="submit" value="BUY IT!">
+			</form>
+		</div>
+	</body>
+</html>

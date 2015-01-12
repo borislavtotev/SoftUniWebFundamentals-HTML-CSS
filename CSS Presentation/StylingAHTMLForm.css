@@ -1,0 +1,114 @@
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+body > div  form {
+	margin: 0 auto 0 auto;
+	height: 610px;
+	width: 375px;
+	background-image: url("./resources/formBackground.jpg");
+	box-sizing: border-box;
+}
+
+fieldset {
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 5px; 
+	width: 340px;
+	margin-left: 15px;
+	margin-bottom: 2px;
+	box-sizing: border-box;
+	background: rgba(255,255,255,0.3);
+	color: rgba(0,0,0,0.75);
+	font-size: 13px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+form div {
+	color: rgba(255,255,255,0.9);
+	margin-left: 15px;
+	margin-top: 12.5px;
+	margin-bottom: 12.5px;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+form div:first-child {
+	margin-top: 0px;
+	padding-top: 20px;
+}
+
+label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+input {
+	box-sizing: border-box;
+	width: 180px;
+	height: 23px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+input[type="text"], textarea {
+	position: relative;
+	float: right;
+	margin-right: 40px;
+}
+
+textarea {
+	display: inline-block;
+	width: 180px;
+	box-sizing: border-box;
+}
+
+input[type="radio"] {
+	margin: 0;
+	box-sizing: border-box;
+	width: 10px;
+	height: 10px;
+	display: inline;
+	vertical-align: middle;
+}
+
+input[type="radio"] + span {
+	display: inline-block;
+	margin-top: 12px;
+	margin-left: 5px;
+	margin-right: 20px;
+}
+
+input[value="visa"] + span:before {
+	content: url("./resources/visa.png");
+	display: inline-block;
+	vertical-align: middle;
+}
+input[value="amex"] + span:before {
+	content: url("./resources/amex.png");
+	display: inline-block;
+	vertical-align: middle;
+}
+
+input[value="master"] + span:before {
+	content: url("./resources/master.png");
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body > div input[type="submit"] {
+	background-color: #04152f;
+	height: 23px;
+	width: 87px;
+	border: none;
+	border-radius: 13px;
+	box-sizing: border-box;
+	margin-top: 12px;
+	color: white;
+	position: relative;
+	left: 37%;
+}

@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+}
+
+#bigDiv {
+    margin: 0 auto;
+    height: 440px;
+    width: 1130px;
+    background-color: rgb(0,151,68);
+    font-family: Tahoma;
+}
+
+table {
+	border-spacing: 0;
+    text-align: center;
+    line-height: 60px;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+th {
+    background-color: rgb(248,202,20);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0;
+    border: 2px solid black;
+    border-right: none; 
+}
+
+th:first-child {
+    border-radius: 15px 0 0 0;
+    text-align: right;
+    padding-right: 5px;
+}
+
+th:nth-child(3) {
+    text-align: left;
+    padding-left: 5px;
+}
+
+th:last-child { 
+    border-radius: 0 15px 0 0;
+    border-right: 2px solid black ;
+}
+
+td {
+    border: 2px solid black;
+    border-top: none;  
+    border-right: none;  
+}
+
+td:nth-child(1) {
+    padding-right: 5px;
+    text-align: right;
+    width: 180px;
+}
+
+td:nth-child(2) {
+    width: 100px;
+}
+
+td:nth-child(3) {
+    padding-left: 5px;
+    text-align: left;
+    width: 190px;
+}
+
+td:nth-child(4) {
+    width: 100px;
+}
+
+td:nth-child(5) {
+    width: 150px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+td:nth-child(6) {
+    width: 110px;
+}
+
+td:nth-child(7) {
+    width: 160px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+td:nth-child(8) {
+    border-right: 2px solid black;
+    width: 60px;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 15px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0 0 15px 0;
+    border-right: 2px solid black;
+}
+
+tr:nth-child(odd) td{
+    background-color: rgb(255,255,255);
+}
+
+tr:nth-child(even) td{
+    background-color: rgb(200,200,200);
+}
+
+tr:nth-child(1) td:nth-child(1) .flags:after {
+    content: url(brazil.png);
+	float: right;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+tr:nth-child(1) td:nth-child(3) .flags:before {
+    content: url(mexico.png);
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+tr:nth-child(2) td:nth-child(1) .flags::after {
+    content: url(spain.png);
+	float: right;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+tr:nth-child(2) td:nth-child(3) .flags:before  {
+    content: url(netherlands.png);
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+tr:nth-child(3) td:nth-child(1) .flags:after {
+    content: url(italy.png);
+	float: right;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+tr:nth-child(3) td:nth-child(3) .flags:before  {
+    content: url(england.png);
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+tr:nth-child(4) td:nth-child(1) .flags:after {
+    content: url(argentina.png);
+	float: right;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+tr:nth-child(4) td:nth-child(3) .flags:before  {
+    content: url(bosnia.png);
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+tr:nth-child(5) td:nth-child(1) .flags:after {
+    content: url(germany.png);
+	float: right;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+tr:nth-child(5) td:nth-child(3) .flags:before  {
+    content: url(portugal.png);
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+select:disabled {
+    background-color: rgb(220,220,220);
+    color: rgb(240,75,51);
+}
+
+select {
+    color: rgb(28,174,89);
+    height: 34px;
+    width: 38px;
+    vertical-align: top;
+    margin-top: 11px;
+    font-size: 18px !important;
+}
+
+input[type=button] {
+    color:white;
+    height: 42px;
+    width: 42px;
+    border-radius: 42px;
+    font-weight:bolder;
+    font-size: 12px;
+    vertical-align: top;
+    margin-top: 7px;
+}
+
+.red{
+    background:red;
+}
+
+.green{
+    background:green;
+}

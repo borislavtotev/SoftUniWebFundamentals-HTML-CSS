@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Exercise2</title>
+	<style>
+		ol.list1 {
+		list-style-type:upper-roman;
+		padding-left: 10;
+		}
+		
+		ol.list2 {
+		list-style-type:lower-alpha;
+		margin-left: 10;
+		}
+		
+		ol.list3 {
+		list-style-type:"1";
+		margin-left: 10;
+		}
+	</style>	
+</head>
+
+<body>
+	<p>Proceding Text</p>
+	
+	<ol class="list1">
+		<li>List Item 1</li>
+			<ol class="list2">
+				<li>Nested Item 1.1</li>	
+				<li>Nested Item 1.2</li>
+			</ol>
+		<li>List Item 2</li>
+			<ol class="list3">
+				<li>Nested Item 2.1</li>	
+				<li>Nested Item 2.2</li>
+					<ul type="circle">
+						<li>Nested Item 2.2.1</li>	
+						<li>Nested Item 2.2.2</li>
+							<ul type="square">
+								<li>Nested Item 2.2.2.1</li>	
+								<li>Nested Item 2.2.2.2</li>
+							</ul>
+						<li>Nested Item 2.2.3</li>
+					</ul>
+				<li>Nested Item 2.3</li>	
+			</ol>
+		<li>List Item 3</li>
+			<ul type="disc">
+				<li>Nested Item 3.1</li>
+				<li>Nested Item 3.2</li>
+				<li>Nested Item 3.3</li>
+			</ul>
+	</ol>
+	
+</body>
+
+
+
+</html>

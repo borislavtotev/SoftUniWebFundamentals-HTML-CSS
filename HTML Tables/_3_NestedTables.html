@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Nested Tables</title>
+		<style>
+			table {
+				border: solid 1px black;
+			}
+			table tr td {
+				border: solid 1px black;
+			}
+			table.bigTable tr td:nth-child(1) {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			table.bigTable tr td:nth-child(2) {
+				padding: 10px;
+			}
+			table.insideTable {
+				font-size: 47px;
+			}
+		</style>
+	</head>
+	<body>
+		<table class="bigTable">
+			<tr>
+				<td><a href="https://softuni.bg/" target="_blank"><img src="SoftUniLogo.png" /></a></td>
+				<td>
+				<table class="insideTable">
+					<tr>
+						<td>Software</td>
+					</tr>
+					<tr>
+						<td>University</td>
+				</tr>
+				</table></td>
+			</tr>
+		</table>
+	</body>
+</html>

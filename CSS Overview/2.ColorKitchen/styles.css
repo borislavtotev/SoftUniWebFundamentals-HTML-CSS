@@ -1,0 +1,168 @@
+body {
+    background-image: url(colorful_dots_on_black.jpg);
+    font-family: Tahoma;
+    margin: 0;
+}
+
+body > header {
+    background: linear-gradient(to right, rgb(255,0,0) 33.3%, rgb(0,128,0) 33.3%, rgb(0,128,0) 66.7%, rgb(0,0,255) 66.7%);
+    color: #ffff00;
+    width: 100%;
+    height: 55px;
+    font-size: 35px;
+    font-weight: bold; 
+    text-align: center;
+    vertical-align: top;   
+    padding-top: 0;
+}
+
+a:visited {
+    color: rgb(128,128,128);
+}
+
+aside {
+    background-color: rgba(255, 255, 255, 0.9);  
+    border-radius: 18px 18px 18px 18px;
+    padding: 10px 10px;
+    margin: 30px 15px;
+    width: 225px;
+    float: left;
+}
+
+aside header {
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline; 
+    padding-left: 5px;
+}
+
+ul {
+    color: rgb(0,0,0);
+    list-style-type: none;
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 100%;      
+}
+
+li {
+    background-image: url(bullet.png);
+    background-repeat: no-repeat;
+    background-position: 10px 11px;
+    border-radius: 7px 7px 7px 7px;  
+    font-size: 18px;  
+    line-height: 25px;     
+    padding: 6px 0 6px 35px;
+    
+}
+
+li:nth-child(1):hover {
+    background-color: rgb(255,0,0);
+}
+
+li:nth-child(2):hover {
+    background-color: rgb(255,165,0);
+}
+
+li:nth-child(3):hover {
+    background-color: rgb(255,255,0);
+}
+
+li:nth-child(4):hover {
+    background-color: rgb(0,128,0);
+}
+
+li:nth-child(5):hover {
+    background-color: rgb(0,0,255);
+}
+
+li:nth-child(6):hover {
+    background-color: rgb(128,0,128);
+}
+
+li a, li:hover a {
+    color: rgb(0,0,0);;
+    cursor: default;
+    text-decoration: none;
+}
+
+section {
+    display: block;  
+    margin: 30px 25px 30px 285px;
+}
+
+section header {
+    color: rgb(255,255,255);
+    border-radius: 9px 9px;
+    font-size: 30px;
+    height: 50px;    
+    padding-left: 20px;
+    padding-top: 10px;   
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+    margin-bottom: 20px;   
+    padding: 15px;
+    font-size: 20px;
+}
+
+article a {
+    color: rgba(128, 128, 128, 0.9);;
+}
+
+div {
+    margin-top: 0;
+    display: inline-block;
+}
+
+div::first-letter {
+    font-size: 60px !important;
+}
+
+div::first-line {
+    font-style: italic !important;
+}
+
+span:lang(la) {
+    color: rgb(0,0,255);
+    font-style: italic;
+}
+
+span:lang(la):before,  span:lang(la):after {
+    content: "\"";
+}
+
+footer {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#webColors {
+    background-color: rgb(255,0,0);
+}
+
+#webSafeColors {
+    background-color: rgb(255,165,0);
+    color: rgb(0,0,0);
+}
+
+#RGB {
+    background-color: rgb(255,255,0);
+    color: rgb(0,0,0);
+}
+
+#RGBA {
+    background-color: rgb(0,128,0);
+}
+
+article:nth-last-child(2) header {
+    background-color: rgb(0,0,255);
+}
+
+article:nth-last-child(1) header {
+    background-color: rgb(128,0,128);
+}
+
+

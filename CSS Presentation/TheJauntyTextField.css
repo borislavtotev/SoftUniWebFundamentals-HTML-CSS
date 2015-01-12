@@ -1,0 +1,166 @@
+div.shapes {
+	height: 294px;
+	width: 750px;
+	font-size: 47px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 12px 12px 7px rgb(200,200,200);
+	border-bottom: 10px double blue;
+	border-left: 7px dashed red;
+	border-right: 16px solid green;
+	border-top: 7px dotted yellow;
+	box-sizing: border-box;
+	padding-top: 21px;
+	box-shadow: 20px 20px 5px #888;
+}
+
+div.shapes > div {
+	font-size: 27px;
+	text-transform: none;
+	border: 3px solid blue;
+	border-radius: 138px;
+	height: 138px;
+	width: 668px;
+	box-sizing: border-box;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 41px;
+}
+
+div.shapes > div > div {
+	border: 3px solid green;
+	border-radius: 132px;
+	height: 132px;
+	width: 662px;
+	box-sizing: border-box;
+}
+
+div.shapes > div > div > div {
+	border: 3px solid yellow;
+	border-radius: 126px;
+	height: 126px;
+	width: 656px;
+	box-sizing: border-box;
+}
+
+div.shapes > div > div > div > div {
+	border: 3px solid red;
+	border-radius: 120px;
+	height: 120px;
+	width: 650px;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+
+input {
+	position: absolute;
+	background-color: rgb(218, 151, 30);
+	border: 4px outset rgb(250, 170, 0);
+	box-sizing: border-box;
+	margin-top: 16px;
+	width: 210px;
+	z-index: -1;
+}
+
+body input.buttons#button1 {
+	left: 155px;
+	top: 194px;
+	font-weight: bold;
+}
+
+body input.buttons#button2 {
+	left: 385px;
+	top: 194px;
+}
+
+input + span {
+	font-size: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	position: absolute;
+	top: 210px;
+}
+
+input.buttons#button1 + span {
+	left: 170px;
+}
+
+input.buttons#button2 + span {
+	left: 400px;
+}
+
+div.firstBaloon {
+	position: absolute;
+	background-color: rgba(173,174,174,0.7);
+	height: 35px;
+	width: 35px;
+	left: 580px;
+	top: 185px;
+	border-radius: 30px;
+	box-sizing: border-box;
+}
+
+div.firstBaloon > div{
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	left: 5px;
+	top: 5px;
+	border-radius: 25px;
+	box-sizing: border-box;
+	border: 3px dashed white;
+}
+
+div.secondBaloon {
+	position: absolute;
+	background-color: rgba(173,174,174, 0.7);
+	height: 50px;
+	width: 50px;
+	left: 640px;
+	top: 125px;
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+
+div.secondBaloon > div {
+	position: absolute;
+	background-color: rgba(173,174,174, 0.7);
+	height: 40px;
+	width: 40px;
+	left: 5px;
+	top: 5px;
+	border-radius: 40px;
+	border: 3px dashed white;
+	box-sizing: border-box;
+}
+
+div.thirdBaloon {
+	position: absolute;
+	background-color: rgba(173,174,174,0.7);
+	left: 695px;
+	top: 45px;
+	height: 95px;
+	width: 160px;
+	text-align: center;
+	color: white;
+	vertical-align: center;
+	border-radius: 160px;
+	box-sizing: border-box;
+}
+
+div.thirdBaloon > div {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	height: 85px;
+	width: 150px;
+	text-align: center;
+	color: white;
+	vertical-align: center;
+	border: 3px dashed white;
+	border-radius: 160px;
+	box-sizing: border-box;
+	font-size: 28px;
+	padding-top: 8px;
+	font-weight: bold;
+}

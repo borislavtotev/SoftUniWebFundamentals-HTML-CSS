@@ -1,0 +1,86 @@
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #2b4157
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #2b4157;
+	text-align: left;
+	margin-bottom: 2px;
+	margin-top: 5px;
+}
+
+section {
+	box-sizing: border-box;
+	width: 567px;
+	display: inline-block;
+}
+
+button {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 175px;
+	height: 210px;
+	padding: 2px;
+	background-color: white;
+	border: 1px solid #dbeffa;
+	border-radius: 10px;
+	margin-top: 3px;
+}
+
+button:hover {
+	border-color: red;
+	cursor: pointer;
+}
+
+.laptopProperties {
+	font-size: 16px;
+	text-align: left;
+}	
+
+.price {
+	background-color: #2b4157;
+	border-top-left-radius: 8px;
+	color: white;
+	box-sizing: border-box;
+	width: 105px;
+	height: 39px;
+	margin-left: 66px;
+}
+
+button img {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	height: 67px;
+	width: 122px;
+}
+
+aside {
+	display: inline-block;
+	vertical-align: top;
+	background-color: #f8fcff;
+	width: 193px;
+	height: 505px;
+}
+
+div.properties {
+	text-align: center;
+	margin-top: 14px;
+}
+
+span.startValue {
+	margin-left: 4px;
+	margin-top: 4px;
+	float: left;
+	font-size: 14px;
+}
+
+span.endValue {
+	float: right;
+	margin-right: 4px;
+	margin-top: 4px;
+	font-size: 14px;
+}

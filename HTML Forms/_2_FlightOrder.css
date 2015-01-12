@@ -1,0 +1,65 @@
+body > div {
+	box-sizing: border-box;
+	height: 350px;
+	width: 600px;
+	background-color: #ffc0cb;
+	font-style: italic;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+input, select {
+	display: inline-block;
+	box-sizing: border-box;
+	height: 30px;
+	margin-left: 5px;
+}
+
+label {
+	margin-left: 5px;
+}
+
+input[list="cities"], input[type="date"], input[type="submit"]{
+	width: 276px;	
+}
+
+input[type="number"] {
+	width: 86px;	
+}
+
+input[type="time"] {
+	width: 133px;	
+}
+
+input[type="checkbox"] {
+	height: 13px;
+}
+
+select {
+	width: 276px;
+}
+
+div.column {
+	display: inline-block;
+}
+
+div.rightColumn  {
+	display: inline-block;
+	padding-left: 285px;
+	width: 600px;
+	margin-top: 5px;
+}
+
+.rightColumn>label {
+	display: inline-block;
+	vertical-align: text-top;	
+}
+
+.column>label:nth-child(2), .column>label:nth-child(3) {
+	margin-left: 70px;
+}

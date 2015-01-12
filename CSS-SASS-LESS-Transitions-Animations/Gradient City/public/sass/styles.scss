@@ -1,0 +1,236 @@
+$text-color: #808080;
+$font-color1: purple;
+$font-color2: blue;
+$font-color3: green;
+$font-color4: yellow;
+$font-color5: orange;
+$font-color6: red;
+$font-size: 12px;
+
+
+@mixin vertical-gradient ($color-start, $color-stop) {
+  background: $color-stop;
+  background: -moz-linear-gradient(top, $color-stop 0%, $color-start 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color-stop), color-stop(100%,$color-start));
+  background: -webkit-linear-gradient(top, $color-stop 0%,$color-start 100%);
+  background: -o-linear-gradient(top, $color-stop 0%,$color-start 100%);
+  background: -ms-linear-gradient(top, $color-stop 0%,$color-start 100%);
+  background: linear-gradient(to bottom, $color-stop 0%,$color-start 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-stop, endColorstr=$color-start,GradientType=0 )
+}
+
+@mixin horizontal-gradient ($color-start, $color-stop) {
+  background: $color-stop;
+  background: -moz-linear-gradient(left, $color-stop 0%, $color-start 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$color-stop), color-stop(100%,$color-start));
+  background: -webkit-linear-gradient(left, $color-stop 0%,$color-start 100%);
+  background: -o-linear-gradient(left, $color-stop 0%,$color-start 100%);
+  background: -ms-linear-gradient(right, $color-stop 0%,$color-start 100%);
+  background: linear-gradient(to right, $color-stop 0%,$color-start 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-stop, endColorstr=$color-start,GradientType=0 )
+}
+
+@mixin diagonal-gradient ($color-start, $color-stop) {
+  background: $color-stop;
+  background: -moz-linear-gradient(left, $color-stop 0%, $color-start 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$color-stop), color-stop(100%,$color-start));
+  background: -webkit-linear-gradient(-45deg, $color-stop 0%,$color-start 100%);
+  background: -o-linear-gradient(-45deg, $color-stop 0%,$color-start 100%);
+  background: -ms-linear-gradient(-45deg, $color-stop 0%,$color-start 100%);
+  background: linear-gradient(135deg, $color-stop 0%,$color-start 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-stop, endColorstr=$color-start,GradientType=0 )
+}
+
+@mixin radial-gradient ($color-start, $color-stop) {
+  background: $color-stop;
+  background: -moz-radial-gradient(center, ellipse cover, $color-stop 0%, $color-start 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$color-stop), color-stop(100%,$color-start));
+  background: -webkit-radial-gradient(center, ellipse cover, $color-stop 0%,$color-start 100%);
+  background: -o-radial-gradient(center, ellipse cover, $color-stop 0%,$color-start 100%);
+  background: -ms-radial-gradient(center, ellipse cover, $color-stop 0%,$color-start 100%);
+  background: radial-gradient(ellipse at center, $color-stop 0%,$color-start 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-stop, endColorstr=$color-start,GradientType=1 ); 
+}
+
+html {
+  @include vertical-gradient(#ffffff,#848484);  
+}
+
+body {
+  color: $text-color;
+  font-size: $font-size;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 70%;
+  background-color: white;
+}
+
+#wrapper>header, section, footer {
+  text-align: center;
+  border: 4px double $text-color;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: auto;
+  article {
+    border: 1px solid $text-color;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+#wrapper>header {
+  h1 {
+    font-size: $font-size * 3.5;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+  }
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      border: 3px double $text-color;
+      line-height: 45px;
+      a {
+        padding: 13px 20px 13px 20px;
+        font-size: $font-size * 1.5;
+      }
+      &:hover {
+        @include vertical-gradient(#ffffff,#848484);
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+section {
+  header {
+    h1 {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    h2 {
+      font-weight: normal;
+    }
+  }
+}
+
+footer {
+  h3 {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  padding-left: 0px;
+  list-style-type: none;
+  li {
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}
+
+div.innerContainer  {
+  width: 100%; 
+  overflow: auto;    
+  &>div {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16.3%;
+    height: 150px;
+    border-radius: 15px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    overflow: auto;
+  }
+}
+
+#vertical ~ div {
+  .purple {
+    @include vertical-gradient(#ffffff,$font-color1);    
+  }
+  .blue {
+    @include vertical-gradient(#ffffff,$font-color2);    
+  }
+  .green {
+    @include vertical-gradient(#ffffff,$font-color3);    
+  }
+  .yellow {
+    @include vertical-gradient(#ffffff,$font-color4);    
+  }
+  .orange {
+    @include vertical-gradient(#ffffff,$font-color5);    
+  }
+  .red {
+    @include vertical-gradient(#ffffff,$font-color6);    
+  }          
+}
+
+#horizontal ~ div {
+  .purple {
+    @include horizontal-gradient(#ffffff,$font-color1);    
+  }
+  .blue {
+    @include horizontal-gradient(#ffffff,$font-color2);    
+  }
+  .green {
+    @include horizontal-gradient(#ffffff,$font-color3);    
+  }
+  .yellow {
+    @include horizontal-gradient(#ffffff,$font-color4);    
+  }
+  .orange {
+    @include horizontal-gradient(#ffffff,$font-color5);    
+  }
+  .red {
+    @include horizontal-gradient(#ffffff,$font-color6);    
+  }          
+}
+
+#diagonal ~ div {
+  .purple {
+    @include diagonal-gradient(#ffffff,$font-color1);    
+  }
+  .blue {
+    @include diagonal-gradient(#ffffff,$font-color2);    
+  }
+  .green {
+    @include diagonal-gradient(#ffffff,$font-color3);    
+  }
+  .yellow {
+    @include diagonal-gradient(#ffffff,$font-color4);    
+  }
+  .orange {
+    @include diagonal-gradient(#ffffff,$font-color5);    
+  }
+  .red {
+    @include diagonal-gradient(#ffffff,$font-color6);    
+  }          
+}
+
+.radial article > div {
+  .purple {
+    @include radial-gradient(#ffffff,$font-color1);    
+  }
+  .blue {
+    @include radial-gradient(#ffffff,$font-color2);    
+  }
+  .green {
+    @include radial-gradient(#ffffff,$font-color3);    
+  }
+  .yellow {
+    @include radial-gradient(#ffffff,$font-color4);    
+  }
+  .orange {
+    @include radial-gradient(#ffffff,$font-color5);    
+  }
+  .red {
+    @include radial-gradient(#ffffff,$font-color6);    
+  }          
+}

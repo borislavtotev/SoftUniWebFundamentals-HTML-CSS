@@ -1,0 +1,55 @@
+body > div {
+	display: inline-block;
+	width: 1070px;	
+	background-color: #ffc0cb;
+	border-radius: 10px;
+}
+
+h1 {
+	font-size: 24px;
+	padding: 0px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+section {
+	display:inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	height: 300px;
+	margin-left: 12px;
+}
+
+section.profileImage {
+	width: 250px;	
+}
+
+figure {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+section.audio {
+	width: 310px;	
+}
+
+section.video {
+	width: 460px;	
+}
+
+div.fontDiv {
+	box-sizing: border-box;
+	width: 300px;
+	height: 150px;	
+	background-color: black;
+}
+
+audio.bigAudio {
+	padding-top: 50px;
+}	

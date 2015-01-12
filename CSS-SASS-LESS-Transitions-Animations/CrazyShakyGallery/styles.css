@@ -1,0 +1,151 @@
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+div.images {
+    display:inline-block;
+    box-sizing: border-box;
+    width: 250px;
+    height: 150px;
+    vertical-align: top;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+div.images > img {
+    display: block;
+    width: 240px;
+    height: 140px;
+    border: 5px solid red;
+    z-index: 1;   
+}
+
+div.images > img:hover, div.images > img:focus {
+   cursor: pointer;
+   background: red;
+   position: absolute;
+   z-index: 3;  
+   -webkit-animation: buzz 0.15s 0s 3, buzz2 0.15s 0.45s 3, Hypnoza 2s 0.9s 1; /* Chrome, Safari, Opera */
+   animation: buzz 0.15s 0s 3, buzz2 0.15s 0.45s 3, Hypnoza 2s 0.9s 1;
+}
+
+@-webkit-keyframes buzz {
+    50% {
+        -webkit-transform: translateX(1px) rotate(1deg);
+        transform: translateX(1px) rotate(1deg);
+    }
+    
+    100% {
+        -webkit-transform: translateX(-1px) rotate(-1deg);
+        transform: translateX(-1px) rotate(-1deg);
+    }
+}
+
+@keyframes buzz {
+    50% {
+        -webkit-transform: translateX(1px) rotate(1deg);
+        transform: translateX(1px) rotate(1deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-1px) rotate(-1deg);
+        transform: translateX(-1px) rotate(-1deg);
+    }
+}
+
+@-webkit-keyframes buzz2 {
+    from {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 30%;
+        left: 30%;  
+    }
+    50% {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        -webkit-transform: translateX(1px) rotate(1deg);
+        transform: translateX(1px) rotate(1deg);
+    }
+
+    100% {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 30%;
+        left: 30%; 
+        -webkit-transform: translateX(-1px) rotate(-1deg);
+        transform: translateX(-1px) rotate(-1deg);
+    }
+}
+
+@keyframes buzz2 {
+    from {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 30%;
+        left: 30%;  
+    }
+    50% {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        -webkit-transform: translateX(1px) rotate(1deg);
+        transform: translateX(1px) rotate(1deg);
+    }
+
+    100% {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 30%;
+        left: 30%; 
+        -webkit-transform: translateX(-1px) rotate(-1deg);
+        transform: translateX(-1px) rotate(-1deg);
+    }
+}
+
+@-webkit-keyframes Hypnoza {
+    from {
+       width: 400px;
+       height: 300px;
+       position: absolute;
+       top: 30%;
+       left: 30%;  
+    }
+    to {
+       width: 400px;
+       height: 300px;
+       position: absolute;
+       top: 30%;
+       left: 30%;  
+       -webkit-transform: rotate(360deg);
+       transform: rotate(360deg);       
+    }
+}
+
+@keyframes Hypnoza {
+    from {
+       width: 400px;
+       height: 300px;
+       position: absolute;
+       top: 30%;
+       left: 30%;  
+    }
+    to {
+       width: 400px;
+       height: 300px;
+       position: absolute;
+       top: 30%;
+       left: 30%;  
+       -webkit-transform: rotate(360deg);
+       transform: rotate(360deg);       
+    }
+}

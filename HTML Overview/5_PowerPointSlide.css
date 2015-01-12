@@ -1,0 +1,37 @@
+body {
+    color: white;
+    font-family: Calibri;
+    font-size: 30px;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    width: 60%;
+}
+
+h1 {
+    color: #ffd069;
+    font-size: 38px;
+}
+
+span {
+    font-weight: bold;
+    color: #f3cd60;
+}
+
+ul {
+    list-style-type: square;
+    color: #f2b254;
+}
+
+.inner {
+    background-color: rgba(128,128,128,0.4);
+    border: 1px solid grey;
+    color: #fbeec9;
+    font-family: Consolas;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+li > div {
+    color: white;
+}
